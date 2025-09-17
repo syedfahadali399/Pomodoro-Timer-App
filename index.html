@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Pomodoro Timer App</title>
+</head>
+<body id="body">
+  <main class="main">
+    <section id="section" class="section">
+      <h1 class="para">Pomodoro Timer</h1>
+      <div class="btn-group">
+        <button id="theme-toggle">🌓</button>
+        <button id="mode-pomodoro" class="mode-tab is-active" role="tab" aria-selected="true" data-mode="pomodoro">Pomodoro</button>
+        <button id="mode-long" class="mode-tab" role="tab" aria-selected="false" data-mode="long">Long Break</button>
+        <button id="mode-short" class="mode-tab" role="tab" aria-selected="false" data-mode="short">Short Break</button>
+      </div>
+  
+      <div class="timer-display">
+        <p id="display-time">25:00</p>
+      </div>
+  
+      <div class="controls">
+        <button id="start-btn" type="button">Start</button>
+        <button id="pause-btn" type="button">Pause</button>
+        <button id="reset-btn" type="reset">Reset</button>
+      </div>
+  
+      <div class="pomodoro-group">
+        <p class="small-para">Completed Pomodoros</p>
+        <p id="show-pomodoro">0</p>
+      </div>
+    </section>
+  </main>
+  <script src="java.js"></script>
+</body>
+</html>
